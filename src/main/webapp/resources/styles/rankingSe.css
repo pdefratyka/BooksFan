@@ -1,0 +1,23 @@
+body{
+	width:auto;
+	height:auto;
+	background-image: url("https://image.ibb.co/b48DQb/book.jpg");
+	background-size:cover;
+}
+.statement{
+	width:auto;
+	height:200px;
+	margin-left:500px;
+	margin-top:300px;
+	color:white;
+	font-size:34px;
+}
+.statement input[type="button"]{
+	width:120px;
+	height:60px;
+	margin-left:135px;
+	font-size:24px;
+}
+.statement input[type="button"]:hover{
+	cursor:pointer;
+}

@@ -1,0 +1,119 @@
+body{
+  width:auto;
+  height:auto;
+  background-image: url("https://image.ibb.co/iZG3ab/book_background.jpg");
+  background-size: cover;
+}
+/*HEAD*/
+#header{
+  width:1320px;
+  height:100px;
+  background-color: black;
+  display: flex;
+  margin-top:-6px;
+}
+#searchButton{
+  width:40px;
+  height:40px;
+  display:flex;
+  margin-left:2px;
+  margin-top: 10px;
+  background-size: contain;/*It makes background image fit to div*/
+  background-image: url("images/searchIcon.png");
+}
+#logo{
+  width:280px;
+  height:80px;
+  color:white;
+}
+#logo img{
+  margin-left: 10px;
+  float:left;
+  width:60px;
+  height:60px;
+}
+#logo h2{
+  float:left;
+  font-size: 26px;
+  float:left;
+  margin-left: 10px;
+}
+#logo:hover{
+  cursor:pointer;
+  color:orange;
+}
+/*CENTER*/
+.Search{
+  width:350px;
+  height:35px;
+  margin-left:230px;
+  font-size:16px;
+  margin-top: 10px;
+}
+.bookFrame{
+  padding-top:20px;
+  background-color: rgba(0,0,0,0.6);
+  height:160px;
+  width:800px;
+  margin:auto;
+  margin-top:10px;
+  clear:left;
+  cursor:pointer;
+  margin-left: 350px;
+  color:white;
+}
+.bookFrame h5{
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 5px;
+  padding-top: 10px;
+  margin-left: 15px;
+}
+.bookFrame:hover{
+  color:orange;
+}
+.bookImage{
+	width:110px;
+	height:150px;
+	background-image: url("images/no_photo2.jpg");
+	background-size:contain;
+  	margin-top: -20px;
+}
+#booksList{
+  background-color: rgba(0,0,0,0);
+  width:auto;
+  height:550px;
+  overflow:auto;
+  position:relative;
+  margin-left: 0px;
+  margin-top: 0px;
+
+}
+.profile{
+    z-index:10;
+}
+/*FOOTER*/
+#footer{
+  position:relative;
+  margin-top:0px;
+  width:auto;
+  height:80px;
+  color:white;
+  margin:auto;
+  font-style: italic;
+  font-size: 14px;
+  background-color: black;
+  margin-left:-8px;
+}
+#emptyList{
+	position:absolute;
+	color:white;
+	font-size:36px;
+	margin-left:440px;
+}
+#emptyList h5{
+	position:absolute;
+	visibility:hidden;
+	margin-left:140px;
+	margin-top:-150px;
+}

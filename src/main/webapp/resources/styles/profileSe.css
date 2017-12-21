@@ -1,0 +1,234 @@
+body{
+  width:100%;
+  height:auto;
+  background-image: url("https://image.ibb.co/b48DQb/book.jpg")
+}
+/*HEAD*/
+#header{
+  width:1350px;
+  float:left;
+  margin-top:-7px;
+  margin-left:-7px;
+  height:170px;
+  overflow:hidden;
+  background-color:rgba(0,0,0,0.6);
+}
+/*LOGO*/
+#logoIcon{
+  margin-left: 10px;
+  margin-top: 10px;
+  width:60px;
+  height:60px;
+  float:left;
+}
+#pageLogo{
+  width:250px;
+  height:80px;
+  margin-top:5px;
+  margin-left: 5px;
+  color:white;
+  float:left;
+
+}
+#pageLogo:hover, #profile:hover{
+  cursor: pointer;
+  color:orange;
+}
+#pageLogo h2{
+  font-size: 30px;
+  font-style: italic;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+/*PROFILE*/
+#profile{
+  width:250px;
+  height:80px;
+  margin-top:5px;
+  margin-right:20px;
+
+  float:right;
+}
+#profileIcon{
+  float:left;
+  width:60px;
+  height:60px;
+  margin-top: 20px;
+
+
+}
+#profile h2{
+  float:left;
+  margin-top: 35px;
+  font-size: 25px;
+  font-style: italic;
+  color:orange;
+  margin-left:0px;
+}
+#lowBar{
+  width:1200px;
+  margin-left: 50px;
+  margin-top: 110px;
+  height:50px;
+  color:white;
+}
+#lowBar h2{
+  font-style: italic;
+  float:left;
+  margin-left: 150px;
+  margin-top: 10px;
+}
+#lowBar h2:hover{
+  cursor: pointer;
+  color:orange;
+}
+/*CENTER*/
+#center{
+  width:auto;
+  float:left;
+  margin-top:5px;
+  margin-left:-7px;
+
+  height:auto;
+
+}
+#options{
+  width:200px;
+  height:700px;
+  margin-top: 20px;
+  margin-left: 10px;
+
+  float:left;
+  overflow: hidden;
+}
+#options h3{
+  width:200px;
+  font-size:16px;
+  margin-top: 10px;
+  margin-left:10px;
+  float:left;
+  color:white;
+}
+#options h3:hover{
+  color:orange;
+  cursor: pointer;
+}
+.FilterInput{
+  width:200px;
+  float:left;
+  margin-left:10px;
+  margin-top: 20px;
+  height:40px;
+  font-size: 15px;
+}
+#mainPage{
+  overflow: auto;
+  float:left;
+  width:1100px;
+  height:700px;
+  margin-top: 20px;
+  margin-left: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color:white;
+  border-width:5px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: rgba(0, 0, 0, 0.0);
+}
+.bookFrame{
+  float:left;
+  width:320px;
+  height:200px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.bookFrame img{
+	width:120px;
+	height:150px;
+	background-image: url("images/no_photo.jpg");
+	background-size:contain;
+}
+.bookFrame :hover{
+  cursor:pointer;
+}
+
+/*FOOTER*/
+#footer{
+  overflow:hidden;
+  width:1350px;
+  float:left;
+  margin-top:5px;
+  margin-left:-7px;
+  height:100px;
+}
+li.profileParent{
+  display: inline;
+}
+.profile{
+    margin-left: 1110px;
+    width:220px;
+    height:300px;
+    position:absolute;
+}
+.profile ul ul{
+    display:none;
+}
+.profile ul li:hover >ul{
+   display:block;
+}
+.profile input[type="button"], #commentSection input[type="button"]{
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Bitter",serif;
+    line-height: 1.8;
+    border-radius: 0;
+    position:relative;
+    width:150px;
+    height:40px;
+    margin-left:-10px;
+    top:60px;
+    color: #fff;
+    background-color: #6496c8;
+    text-shadow: -1px 1px #417cb8;
+    border-width: 1px;
+    border-color: black;
+}
+.profileParent h3{
+  position:absolute;
+  float:left;
+  margin-right: 60px;
+  margin-top: 23px;
+  margin-left: 35px;
+  color:white;
+  font-size: 20px;
+}
+.profile h3:hover, input[type="button"]:hover{
+    cursor: pointer;
+    color:DarkGoldenRod;
+}
+.profile input[type="button"]:hover,  #commentSection input[type="button"]:hover{
+  cursor: pointer;
+  color:DarkGoldenRod;
+  border-color:darkgrey;
+  background-color: #346392;
+  text-shadow: -1px 1px #27496d;
+}
+li.profileParent img{
+
+  border:0px;
+  width:45px;
+  height:45px;
+  border-radius:18px;
+  margin-left:-20px;
+  margin-top:10px;
+  visibility:visible;
+  font-size: 18px;
+  color:white;
+  float:left;
+  font-style: italic;
+  background: rgba(0, 0, 0, 0);
+}
+li.profileParent img:hover, li.profileParent h3:hover{
+  cursor: pointer;
+  color:DarkGoldenRod;
+}

@@ -60,7 +60,7 @@ function ajaxCheckLogin(){
 		dataType:'json',
 		success : function(response) {
 			alert("Succsses");
-			window.location.href = "/BookWeb";
+			window.location.href = "/home";
 		},
 		error: function(){
 			alert("Fail");

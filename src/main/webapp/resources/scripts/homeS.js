@@ -29,8 +29,8 @@ app.controller('homeCtrl', function($scope, $timeout){
     {image:'https://image.ibb.co/is0Skb/tower.jpg', header:"Gunslinger returns", article:"Roland from Gilead and Jake Chambers from NY are going to protect Dark Tower. The biggest enemy is Man in black. Let's get ready to epic adventure.  ", url:""},
     {image:'https://image.ibb.co/knkhJw/game.jpg', header:"Next chapter", article:"George R.R Martin finished The winds of winter. ", url:""},
     {image:'https://image.ibb.co/e9nwdw/it.jpg', header:"IT scares in cinema", article:"Adaptation IT from Stephen King earns a lot of many on the world.", url:""},
-    {image:'https://writersforensicsblog.files.wordpress.com/2015/02/astronaut-moon.jpg', header:"BookWeb rocommend", article:"Apollo 13 by James Lovell and Jeffrey Kluger", url:""},
-    {image:'https://image.ibb.co/mPpnkb/detective.jpg', header:"True Serial", article:"True detective has been chosen as the best TV serial of all time by BookWeb users.", url:""}
+    {image:'https://writersforensicsblog.files.wordpress.com/2015/02/astronaut-moon.jpg', header:"BooksFan rocommends", article:"Apollo 13 by James Lovell and Jeffrey Kluger", url:""},
+    {image:'https://image.ibb.co/mPpnkb/detective.jpg', header:"True Serial", article:"True detective has been chosen as the best TV serial of all time by BooksFan users.", url:""}
   ];
 
   $scope.slideNumber=0;
@@ -97,7 +97,7 @@ app.controller('homeCtrl', function($scope, $timeout){
     ajaxLogout();
   };
   $scope.pageLogoFunction=function(){
-    window.location.href="/BookWeb";
+    window.location.href="/home";
   };
   $scope.profile=function(userId){
     window.location.href = "/users/"+userId;

@@ -45,16 +45,16 @@ app.controller('defaultCtrl', function($scope){
 		  ajaxLogout();
 	  };
 	  $scope.profile=function(userId){
-			window.location.href = "/BookWeb/users/"+userId;
+			window.location.href = "users/"+userId;
 		};
 		  $scope.pageLogoFunction=function(){
-			    window.location.href="/BookWeb/home.html";
+			    window.location.href="home.html";
 			  }
 			  $scope.saveComment=function(){
 			    ajaxSaveComment($("#profileButton").attr('value'));
 			  };
   $scope.search=function(){
-    location.href = "http://localhost:8080/BookWeb/books?query="+$scope.searchValue;
+    location.href = "books?query="+$scope.searchValue;
   };
 	$scope.addBook = function(title, author, year,views, img, rate, manyOfRead) {
 		$scope.book.title=title;

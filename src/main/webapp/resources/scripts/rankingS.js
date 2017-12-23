@@ -1,3 +1,3 @@
 function homecoming(){
-	window.location.href="/BookWeb/home";
+	window.location.href="home";
 }

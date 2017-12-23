@@ -17,21 +17,21 @@
   <div id="mainCtrl"  data-ng-controller="defaultCtrl">
     <div id="header">
       <div id="logo" ng-click="pageLogoFunction()">
-        <img src="/BookWeb/resources/styles/images/logo.png">
-        <h2>BOOKWEB</h2>
+        <img src="https://image.ibb.co/ivTmc6/logo.png">
+        <h2>BooksFan</h2>
       </div>
 
       <input type="text" placeholder="Title or Author..." class="Search" ng-model="searchValue" ng-keypress="searchFunction($event)">
       <input type="button" ng-click="search()" id="searchButton">
       <div id="login">
-        <a href="/BookWeb/login">Log in</a><span>  /  </span><a href="/BookWeb/register">Register</a>
+        <a href="login">Log in</a><span>  /  </span><a href="register">Register</a>
       </div> 
         <nav class="profile">
           <ul>
             <li class="profileParent">
                <!--There should be ${name} instead of Profile
                    Ewentually you'll have to change function if-->
-              <img src="/BookWeb/resources/styles/images/profile.png" value="${name}" id="profileButton" ng-click="profile('${userId}')">
+              <img src="https://image.ibb.co/bMof4m/profile.png" value="${name}" id="profileButton" ng-click="profile('${userId}')">
               <h3>${name}</h3>
               <ul>
                 <li><input type="button" value="Profile" ng-click="profile('${userId}')"></li>

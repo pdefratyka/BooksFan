@@ -10,7 +10,7 @@ function ajaxAddBook(){
 		dataType:'json',
 		success : function(response) {
 			alert("Succsses");
-			window.location.href = "/BookWeb";
+			window.location.href = "home";
 		},
 		error: function(){
 			alert("Fail");
@@ -39,7 +39,7 @@ function ajaxLogout(){
       contentType: "application/json; charset=utf-8",
       success : function() {
         alert("Succsses");
-        window.location.href = "";
+        window.location.href = "home";
       },
       error: function(){
         alert("Fail");

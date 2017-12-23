@@ -12,15 +12,15 @@
 <body data-ng-controller="defaultCtrl" id="someCtrl" onload="ajaxLoadYourBooks()">
   <div id="header">
     <div id="pageLogo" ng-click="pageLogoFunction()">
-      <img src="/BookWeb/resources/styles/images/logo.png" id="logoIcon">
-      <h2>BOOKWEB</h2>
+      <img src="https://image.ibb.co/ivTmc6/logo.png" id="logoIcon">
+      <h2>BooksFan</h2>
     </div>
          <nav class="profile">
           <ul>
             <li class="profileParent">
                <!--There should be ${name} instead of Profile
                    Ewentually you'll have to change function if-->
-              <img src="/BookWeb/resources/styles/images/profile.png" value="${name}" id="profileButton" ng-click="profile('${userId}')">
+              <img src="https://image.ibb.co/bMof4m/profile.png" value="${name}" id="profileButton" ng-click="profile('${userId}')">
               <h3>${name}</h3>
               <ul>
                 <li><input type="button" value="Profile" ng-click="profile('${userId}')"></li>

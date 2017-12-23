@@ -89,7 +89,7 @@ app.controller('defaultCtrl', function($scope, $filter){
 
   };
   $scope.pageLogoFunction=function(){
-    window.location.href="/BookWeb/home.html";
+    window.location.href="home.html";
   }
   $scope.readBooksFunction=function(){
 	this.cleanBooks();
@@ -103,11 +103,11 @@ app.controller('defaultCtrl', function($scope, $filter){
 	  $scope.bookList.length=0;
   }
   $scope.addBookFunction=function(userId){
-	  window.location.href="/BookWeb/users/"+userId+"/addbook";
+	  window.location.href="users/"+userId+"/addbook";
   }
 
   $scope.selectBook=function(bookId){
-	  window.location.href="/BookWeb/books/"+bookId;
+	  window.location.href="books/"+bookId;
   }
   $scope.logout=function(){
 	  ajaxLogout();

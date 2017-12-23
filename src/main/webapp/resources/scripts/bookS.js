@@ -43,7 +43,7 @@ app.controller('defaultCtrl', function($scope){
 		window.location.href="home.html";
 	};
 	$scope.profile=function(userId){
-		window.location.href = "/BookWeb/users/"+userId;
+		window.location.href = "/users/"+userId;
 	};
 	$scope.logout=function(){
 		ajaxLogout();

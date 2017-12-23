@@ -4,7 +4,7 @@ function ajaxAddBook(){
 	initBook();
 	$.ajax({
 		type : 'POST',
-		url: '/BookWeb/books/addbook',
+		url: '/books/addbook',
 		data: JSON.stringify(book),
 		contentType: "application/json; charset=utf-8",
 		dataType:'json',
@@ -35,7 +35,7 @@ function ajaxLoadBooks(){
 function ajaxLogout(){
     $.ajax({
       type : 'DELETE',
-      url: '/BookWeb/users/logout',
+      url: '/users/logout',
       contentType: "application/json; charset=utf-8",
       success : function() {
         alert("Succsses");
@@ -79,7 +79,7 @@ $.ajax({
 	dataType:'json',
 	success : function(response) {
 		alert("Succsses");
-		window.location.href = "/BookWeb";
+		window.location.href = "/home";
 	},
 	error: function(){
 		alert("Fail");

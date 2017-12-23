@@ -45,7 +45,8 @@ app.controller('defaultCtrl', function($scope){
 		  ajaxLogout();
 	  };
 	  $scope.profile=function(userId){
-			window.location.href = "users/"+userId;
+		  var pathArray=window.location.pathname.split('/');
+			window.location.href =pathArray[0]+"users/"+userId;
 		};
 		$scope.pageLogoFunction=function(){
 				var pathArray=window.location.pathname.split('/');

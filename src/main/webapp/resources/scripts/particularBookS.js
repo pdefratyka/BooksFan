@@ -47,14 +47,16 @@ app.controller('defaultCtrl', function($scope){
 	  $scope.profile=function(userId){
 			window.location.href = "users/"+userId;
 		};
-		  $scope.pageLogoFunction=function(){
-			    window.location.href="home.html";
-			  }
+		$scope.pageLogoFunction=function(){
+				var pathArray=window.location.pathname.split('/');
+			    window.location.href=pathArray[0]+"/home.html";
+			  };
 			  $scope.saveComment=function(){
 			    ajaxSaveComment($("#profileButton").attr('value'));
 			  };
   $scope.search=function(){
-    location.href = "books?query="+$scope.searchValue;
+	var pathArray=window.location.pathname.split('/');
+    location.href = pathArray[0]+"/books?query="+$scope.searchValue;
   };
 	$scope.addBook = function(title, author, year,views, img, rate, manyOfRead) {
 		$scope.book.title=title;

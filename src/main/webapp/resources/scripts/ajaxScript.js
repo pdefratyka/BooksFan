@@ -39,7 +39,7 @@ function ajaxLogout(){
       contentType: "application/json; charset=utf-8",
       success : function() {
         alert("Succsses");
-        window.location.href = "home";
+        window.location.href = pathArray[0]+"/home.html";
       },
       error: function(){
         alert("Fail");

@@ -136,7 +136,8 @@ function loadRateValue() {
 function ajaxRateBook(login){
 	loadRateValue();
 	var pathArray=window.location.pathname.split('/');
-
+	alert(pathArray[1]);
+	alert(pathArray[2]);
 	$.ajax({
 		type : 'POST',
 		url: pathArray[2]+'/rate/'+rate,

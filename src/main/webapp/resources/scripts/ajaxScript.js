@@ -91,7 +91,7 @@ function ajaxLoadWantReadBooks(){
 	pathName();
 	$.ajax({
 		type : 'GET',
-		url: id[3]+'/wantread',
+		url: id+'/wantread',
 		dataType : 'JSON',
 		success : function(book) {
 			$.each(book,
@@ -107,7 +107,7 @@ function ajaxLoadYourBooks(){
 	pathName();
 	$.ajax({
 		type : 'GET',
-		url: id[3]+'/books',
+		url: id+'/books',
 		dataType : 'JSON',
 		success : function(book) {
 			$.each(book,

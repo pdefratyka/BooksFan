@@ -124,6 +124,8 @@ function loadBooks(title, author, year, img, id) {
 	});
 }
 function pathName(){
+	alert("Path Function");
 	var pathArray=window.location.pathname.split('/');
 	id=pathArray[2];
+	alert(id);
 }

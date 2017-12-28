@@ -68,9 +68,10 @@
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular.min.js"></script>
 	<script type="text/javascript"
-		src="<c:url value="/resources/scripts/ajaxScript.js"/>"></script>
-	<script type="text/javascript"
 		src="<c:url value="/resources/scripts/profileScript.js"/>"></script>
+	<script type="text/javascript"
+		src="<c:url value="/resources/scripts/ajaxScript.js"/>"></script>
+
 
 </body>
 </html>

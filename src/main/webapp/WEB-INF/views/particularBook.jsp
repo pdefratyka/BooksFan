@@ -78,7 +78,7 @@
 	<script type="text/javascript"
 		src="<c:url value="/resources/scripts/ajaxScript.js"/>"></script>
 	<script type="text/javascript"
-		src="<c:url value="/resources/scripts/particularBookS.js"/>"></script>
+		src="<c:url value="/resources/scripts/particularBookScript.js"/>"></script>
 
 </body>
 </html>

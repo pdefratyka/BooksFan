@@ -112,7 +112,7 @@ function ajaxLoadRate(){
 	var pathArray=window.location.pathname.split('/');
 	$.ajax({
 		type: 'GET',
-		url:pathArray[3]+'/rate/'+userId,
+		url:pathArray[2]+'/rate/'+userId,
 		dataType: 'JSON',
 		success: function(rate){
 			var scope = angular.element(document.getElementById("mainCtrl")).scope();
@@ -139,7 +139,7 @@ function ajaxRateBook(login){
 
 	$.ajax({
 		type : 'POST',
-		url: pathArray[3]+'/rate/'+rate,
+		url: pathArray[2]+'/rate/'+rate,
 		data: {
 			"login":login
 		},
@@ -157,7 +157,7 @@ function ajaxWantRead(wantRead, login){
 	var pathArray=window.location.pathname.split('/');
 	$.ajax({
 		type : 'POST',
-		url: pathArray[3]+'/wantread/'+wantRead,
+		url: pathArray[2]+'/wantread/'+wantRead,
 		data: {
 			"login":login
 		},
@@ -176,7 +176,7 @@ function ajaxSaveComment(login){
 	var pathArray=window.location.pathname.split('/');
 	$.ajax({
 		type : 'POST',
-		url: pathArray[3]+'/'+login+'/comment',
+		url: pathArray[2]+'/'+login+'/comment',
 		data: {
 			"comment":comment
 		},
@@ -194,7 +194,7 @@ function ajaxLoadComment(){
 	var pathArray=window.location.pathname.split('/');
 	$.ajax({
 		type: 'GET',
-		url:pathArray[3]+'/'+userId+'/comment',
+		url:pathArray[2]+'/'+userId+'/comment',
 		dataType: 'JSON',
 		success: function(comment){
 			var scope = angular.element(document.getElementById("mainCtrl")).scope();

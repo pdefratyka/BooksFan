@@ -1,7 +1,8 @@
 onload=function(){
-	alert("OnLoad function");
 	var e=document.getElementById("refreshed");
-	if(e.value=="no")e.value="yes";
+	if(e.value=="no"){
+		e.value="yes";
+	}
 	else{
 		e.value="no";
 		location.reload();
@@ -11,7 +12,6 @@ onload=function(){
 
 $( document ).ready( function() {
   //Check login
-	onload();
 	var user=$("#profileButton").attr('value');
 	if(user.length>2){
 		$("#login").css('visibility','hidden');
@@ -84,6 +84,7 @@ app.controller('defaultCtrl', function($scope){
   	});
   }
   function ajaxLoadBooksW(){
+	onload();
   	$.ajax({
   		type : 'GET',
   		dataType : 'JSON',

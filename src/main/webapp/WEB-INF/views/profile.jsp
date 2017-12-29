@@ -70,7 +70,7 @@
 	<script type="text/javascript"
 		src="<c:url value="/resources/scripts/profileScript.js"/>"></script>
 	<script type="text/javascript"
-		src="<c:url value="/resources/scripts/ajaxScript.js"/>"></script>
+		src="<c:url value="/resources/scripts/ajaxScript2.js"/>"></script>
 
 
 </body>

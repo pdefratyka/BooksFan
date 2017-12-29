@@ -11,7 +11,7 @@
 </head>
 <body>
 	<div class="statement">
-		<h2>Work in progress</h2>
+		<h2>Work in progress...</h2>
 		<input type="button" value="Return" onclick="homecoming()">
 	</div>"
 

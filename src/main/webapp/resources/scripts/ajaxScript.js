@@ -39,7 +39,8 @@ function ajaxLogout(){
       contentType: "application/json; charset=utf-8",
       success : function() {
         alert("Succsses");
-        window.location.href = pathArray[0]+"/home.html";
+        var pathArray=window.location.pathname.split('/');
+        window.location.href = pathArray[0]+"/home";
       },
       error: function(){
         alert("Fail");
@@ -60,7 +61,8 @@ function ajaxCheckLogin(){
 		dataType:'json',
 		success : function(response) {
 			alert("Succsses");
-			window.location.href = "/home";
+			var pathArray=window.location.pathname.split('/');
+			window.location.href = pathArray[0]+"/home";
 		},
 		error: function(){
 			alert("Fail");
@@ -79,7 +81,8 @@ $.ajax({
 	dataType:'json',
 	success : function(response) {
 		alert("Succsses");
-		window.location.href = "/home";
+		var pathArray=window.location.pathname.split('/');
+		window.location.href = pathArray[0]+"/home";
 	},
 	error: function(){
 		alert("Fail");

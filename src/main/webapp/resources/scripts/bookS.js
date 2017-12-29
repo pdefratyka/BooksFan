@@ -1,5 +1,17 @@
+onload=function(){
+	alert("OnLoad function");
+	var e=document.getElementById("refreshed");
+	if(e.value=="no")e.value="yes";
+	else{
+		e.value="no";
+		location.reload();
+	}
+}
+
+
 $( document ).ready( function() {
   //Check login
+	onload();
 	var user=$("#profileButton").attr('value');
 	if(user.length>2){
 		$("#login").css('visibility','hidden');

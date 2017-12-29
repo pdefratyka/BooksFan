@@ -1,10 +1,10 @@
 onload=function(){
-	alert("Yolo");
-	if(!!window.performance && window.performance.navigation.type === 2)
+	alert("Man...");
+	/*if(!!window.performance && window.performance.navigation.type === 2)
 	{
 	    console.log('Reloading');
 	    window.location.reload();
-	}
+	}*/
 }
 
 
@@ -82,7 +82,7 @@ app.controller('defaultCtrl', function($scope){
   	});
   }
   function ajaxLoadBooksW(){
-	onload();
+	//onload();
   	$.ajax({
   		type : 'GET',
   		dataType : 'JSON',

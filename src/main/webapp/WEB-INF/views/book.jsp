@@ -57,7 +57,7 @@
 <div id="footer">
   <span>This page has been created by Pawel Defratyka just for learn purposes</span><br>
   <span>Contact:p.defratyka28@gmail.com</span>
-  <input type="hidden" id="refreshed" value="no">
+ 
 </div>
 
 
@@ -69,7 +69,7 @@
 	<script type="text/javascript"
 		src="<c:url value="/resources/scripts/ajaxScript2.js"/>"></script>
 	<script type="text/javascript"
-		src="<c:url value="/resources/scripts/bookScript.js"/>"></script>
+		src="<c:url value="/resources/scripts/bookScript4.js"/>"></script>
 
 
 

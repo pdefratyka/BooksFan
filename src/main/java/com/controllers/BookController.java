@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -32,22 +35,26 @@ public class BookController {
 	}
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET, produces = "application/json")
 	@ResponseBody
-	public Book getBookById(@PathVariable("id") long id) {
-		return bookService.getBookById(id);
+	public ResponseEntity<Book> getBookById(@PathVariable("id") long id) {
+		HttpHeaders httpHeaders=new HttpHeaders();
+		httpHeaders.add("Cache-Control","no-cache, no-store, must-revalidate");
+		return new ResponseEntity<Book>(bookService.getBookById(id),httpHeaders, HttpStatus.OK);
 	}
 	
 	@RequestMapping(method = RequestMethod.GET, produces = "application/json")
 	@ResponseBody
-	public List<Book> getBookByTitle(@RequestParam(value = "query", required = false) String query,
+	public ResponseEntity<List<Book>> getBookByTitle(@RequestParam(value = "query", required = false) String query,
 									@RequestParam(value = "author", required = false) String author) {
 		List<Book>list=bookService.getBooksByAuthor(query);
-
+		HttpHeaders httpHeaders=new HttpHeaders();
+		httpHeaders.add("Cache-Control","no-cache, no-store, must-revalidate");
+		System.out.println("Get book");
 		if(list.size()>0)
-			return list;
+			return new ResponseEntity<List<Book>>(list,httpHeaders, HttpStatus.OK);
 
 		else{
 			list=bookService.getBookByTitle(query);
-			return list;
+			return new ResponseEntity<List<Book>>(list,httpHeaders, HttpStatus.OK);
 		}
 		
 

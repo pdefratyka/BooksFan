@@ -1,22 +1,22 @@
 body{
   width:100%;
   height:auto;
-  background-image: url("https://image.ibb.co/b48DQb/book.jpg")
+  background-image: url("https://image.ibb.co/b48DQb/book.jpg");
 }
 /*HEAD*/
 #header{
-  width:1350px;
+  width:1330px;
   float:left;
   margin-top:-7px;
-  margin-left:-7px;
-  height:170px;
+  margin-left:0px;
+  height:112px;
   overflow:hidden;
   background-color:rgba(0,0,0,0.6);
 }
 /*LOGO*/
 #logoIcon{
-  margin-left: 10px;
-  margin-top: 10px;
+  margin-left: 20px;
+  margin-top: 0px;
   width:60px;
   height:60px;
   float:left;
@@ -35,47 +35,23 @@ body{
   color:orange;
 }
 #pageLogo h2{
-  font-size: 30px;
-  font-style: italic;
+  font-size: 26px;
+  float:left;
   margin-left: 10px;
-  padding-left: 10px;
+  margin-top: 15px;
 }
 /*PROFILE*/
-#profile{
-  width:250px;
-  height:80px;
-  margin-top:5px;
-  margin-right:20px;
-
-  float:right;
-}
-#profileIcon{
-  float:left;
-  width:60px;
-  height:60px;
-  margin-top: 20px;
-
-
-}
-#profile h2{
-  float:left;
-  margin-top: 35px;
-  font-size: 25px;
-  font-style: italic;
-  color:orange;
-  margin-left:0px;
-}
 #lowBar{
-  width:1200px;
-  margin-left: 50px;
-  margin-top: 110px;
+  width:auto;
+  margin-left:10px;
+  margin-top: 70px;
   height:50px;
   color:white;
 }
 #lowBar h2{
   font-style: italic;
   float:left;
-  margin-left: 150px;
+  margin-left: 120px;
   margin-top: 10px;
 }
 #lowBar h2:hover{
@@ -155,7 +131,7 @@ body{
 /*FOOTER*/
 #footer{
   overflow:hidden;
-  width:1350px;
+  width:auto;
   float:left;
   margin-top:5px;
   margin-left:-7px;
@@ -197,7 +173,7 @@ li.profileParent{
   position:absolute;
   float:left;
   margin-right: 60px;
-  margin-top: 23px;
+  margin-top: 15px;
   margin-left: 35px;
   color:white;
   font-size: 20px;
@@ -220,7 +196,7 @@ li.profileParent img{
   height:45px;
   border-radius:18px;
   margin-left:-20px;
-  margin-top:10px;
+  margin-top:3px;
   visibility:visible;
   font-size: 18px;
   color:white;

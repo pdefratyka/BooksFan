@@ -2,7 +2,7 @@ var id;
 var app=angular.module('app',[]);
 app.controller('defaultCtrl', function($scope, $filter){
   $scope.bookList=[
-    
+
   ];
   $scope.search={title:"", author:'', year:'', rate:''};
   $scope.addBook=function(bookTitle, bookAuthor, bookYear, bookId, bookImg){
@@ -124,8 +124,7 @@ function loadBooks(title, author, year, img, id) {
 	});
 }
 function pathName(){
-	alert("Path Function");
+
 	var pathArray=window.location.pathname.split('/');
 	id=pathArray[2];
-	alert(id);
 }

@@ -28,7 +28,7 @@
 	<script type="text/javascript"
 		src="<c:url value="/resources/scripts/ajaxScript2.js"/>"></script>
 	<script type="text/javascript"
-		src="<c:url value="/resources/scripts/registerScript.js"/>"></script>
+		src="<c:url value="/resources/scripts/registerS.js"/>"></script>
 
 </body>
 </html>

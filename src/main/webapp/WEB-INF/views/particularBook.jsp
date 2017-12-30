@@ -24,7 +24,7 @@
       <input type="text" placeholder="Title or Author..." class="Search" ng-model="searchValue" ng-keypress="searchFunction($event)">
       <input type="button" ng-click="search()" id="searchButton">
       <div id="login">
-        <a href="login">Log in</a><span>  /  </span><a href="register">Register</a>
+        <a ng-click="loginHref()">Log in</a><span>  /  </span><a ng-click="registerHref()">Register</a>
       </div> 
         <nav class="profile">
           <ul>
@@ -78,7 +78,7 @@
 	<script type="text/javascript"
 		src="<c:url value="/resources/scripts/ajaxScript2.js"/>"></script>
 	<script type="text/javascript"
-		src="<c:url value="/resources/scripts/particularBookScript2.js"/>"></script>
+		src="<c:url value="/resources/scripts/particularBookScript3.js"/>"></script>
 
 </body>
 </html>

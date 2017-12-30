@@ -1,7 +1,7 @@
 body{
   width:auto;
   height:auto;
-  background-image:url("https://preview.ibb.co/iiWBBG/particular_Book_background.jpg");
+  background-image: url("https://image.ibb.co/b48DQb/book.jpg");
   background-size: cover;
 }
 #header{
@@ -151,14 +151,3 @@ li.profileParent img{
 	color:white;
 	font-style:italic;
 }
-
-
-
-
-
-
-
-
-
-
-

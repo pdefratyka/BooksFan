@@ -151,3 +151,9 @@ li.profileParent img{
 	color:white;
 	font-style:italic;
 }
+#login a{
+  text-decoration: underline;
+}
+#login a:hover{
+  cursor:pointer;
+}

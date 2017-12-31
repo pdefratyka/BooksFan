@@ -74,7 +74,7 @@
 		<script type="text/javascript"
 		src="<c:url value="/resources/scripts/ajaxScript2.js"/>"></script>
 		<script type="text/javascript"
-		src="<c:url value="/resources/scripts/homeS.js"/>"></script>
+		src="<c:url value="/resources/scripts/homeScript.js"/>"></script>
 
 </body>
 </html>

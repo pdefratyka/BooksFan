@@ -41,8 +41,6 @@
        <h2 ng-click="ranking()">Ranking</h2><h2 ng-click="recentlyRead()">Recently Read</h2>
       </div>
      </div>
-
-
      <div id="center">
        <div id="slidePanel">
          <i class="arrow right" ng-click="nextSlide()"></i>

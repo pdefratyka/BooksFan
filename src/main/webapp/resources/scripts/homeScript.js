@@ -1,7 +1,7 @@
 $( document ).ready( function() {
 	var pathArray=window.location.pathname.split('/');
-	if(pathArray[1]!="home"){
-		window.location.href=pathArray[0]+"/home.html";
+	if(pathArray[1]!="home" || pathArray[1]!="home.html"){
+		window.location.href=pathArray[0]+"/home";
 	}
     
   //Check login

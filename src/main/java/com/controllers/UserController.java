@@ -2,6 +2,7 @@ package com.controllers;
 
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,6 +35,7 @@ public class UserController {
 	@ResponseBody
 	public User getUser(@PathVariable("id") long id){
 		return userService.getUser(id);
+
 	}
 	@RequestMapping(method = RequestMethod.POST, produces = "application/json")
 	@ResponseBody
@@ -71,8 +73,22 @@ public class UserController {
 	}
 	//It didn't work until I add @ResponseBody annotation. In Ajax also has to be some ContentType.
 	@RequestMapping("/{id}")
-	public String profile(){
-		return "profile";
+	public String profile(HttpSession session,  HttpServletRequest request){
+		System.out.println("Profile Method");
+		String mapping = request.getServletPath().substring(7);
+		long id=Long.parseLong(mapping);
+		long sessionId=0;
+		if(session.getAttribute("userId")!=null){
+			sessionId=(Long)session.getAttribute("userId");
+		}
+
+		System.out.println("URL ID: "+id);
+		System.out.println("Session atribute: "+session.getAttribute("userId"));
+		if(id==sessionId){
+			System.out.println("It is equal");
+			return "profile";
+		}
+		return "home";
 	}
 	@RequestMapping(value="/{id}/books", method=RequestMethod.GET, produces="application/json")
 	@ResponseBody

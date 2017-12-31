@@ -1,8 +1,8 @@
 $( document ).ready( function() {
-	var pathArray=window.location.pathname.split('/');
-	if(pathArray[1]!="home" || pathArray[1]!="home.html"){
-		window.location.href=pathArray[0]+"/home";
-	}
+	//var pathArray=window.location.pathname.split('/');
+	//if(pathArray[1]!="home" || pathArray[1]!="home.html"){
+	//	window.location.href=pathArray[0]+"/home";
+	//}
     
   //Check login
 	var user=$("#profileButton").attr('value');

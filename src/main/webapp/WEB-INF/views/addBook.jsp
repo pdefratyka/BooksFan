@@ -17,7 +17,7 @@
 			<input id="year" type="text" placeholder="Year..."> 
 			<input id="image" type="text" placeholder="Image...">
 			<input type="button" value="Submit" ng-click="addBook()">
-			<input type="button" value="Home page" ng-click="back()">					
+			<input type="button" value="Home" ng-click="back()">					
 		</div>
 	</div>
 

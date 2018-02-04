@@ -81,9 +81,9 @@
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular.min.js"></script>
 	<script type="text/javascript"
-		src="<c:url value="/resources/scripts/ajaxScript2.js"/>"></script>
+		src="<c:url value="/resources/scripts/ajaxScript3.js"/>"></script>
 	<script type="text/javascript"
-		src="<c:url value="/resources/scripts/particularBookScript3.js"/>"></script>
+		src="<c:url value="/resources/scripts/particularBookScript4.js"/>"></script>
 
 </body>
 </html>

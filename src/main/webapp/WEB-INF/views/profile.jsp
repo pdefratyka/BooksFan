@@ -39,8 +39,8 @@
     <div id="options">
       <input class="FilterInput" ng-model="search.title" placeholder="Title...">
       <input class="FilterInput" ng-model="search.author" placeholder="Author...">
-      <input class="FilterInput" ng-model="search.year" placeholder="Year...">
-      <!-- <input class="FilterInput" ng-model="search.rate" placeholder="Rate..."> -->
+      <!-- <input class="FilterInput" ng-model="search.year" placeholder="Year...">
+      <input class="FilterInput" ng-model="search.rate" placeholder="Rate..."> -->
       <h3 ng-click="sortTitlesByAlphabet()">Sort titles by Alphabet</h3>
       <h3 ng-click="sortAuthorsByAlphabet()">Sort authors by Alphabet</h3>
       <!--  <h3 ng-click="sortByYear()">Sort by Year</h3>
@@ -70,7 +70,7 @@
 	<script type="text/javascript"
 		src="<c:url value="/resources/scripts/profileScript.js"/>"></script>
 	<script type="text/javascript"
-		src="<c:url value="/resources/scripts/ajaxScript2.js"/>"></script>
+		src="<c:url value="/resources/scripts/ajaxScript3.js"/>"></script>
 
 
 </body>

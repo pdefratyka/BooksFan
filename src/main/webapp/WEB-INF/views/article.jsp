@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet"
 	href="<c:url value="/resources/styles/rankingSe.css"/>">
-<title>Ranking</title>
+<title>Articles</title>
 </head>
 <body>
 	<div class="statement">

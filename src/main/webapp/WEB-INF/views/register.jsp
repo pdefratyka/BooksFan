@@ -17,7 +17,7 @@
 			<input type="password" placeholder="Confrim password..."> 
 			<input id="userEmail" type="text" placeholder="Email..." ng-keypress="registerFunction($event)">
 			<input type="button" value="Register" ng-click="register()">		
-			<input type="button" value="Home page" ng-click="back()">			
+			<input type="button" value="Home" ng-click="back()">			
 		</div>
 	</div>
 

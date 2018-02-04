@@ -46,7 +46,7 @@ public class BookDaoImpl implements BookDao{
 	}
 
 	public List<Book> getBooksByAuthor(String author) {
-		if(author==""){
+		if(author=="" || author=="undefined"){
 			Session session=sessionFactory.getCurrentSession();
 			String sqlQuery="from Book";
 			Query query=session.createQuery(sqlQuery);

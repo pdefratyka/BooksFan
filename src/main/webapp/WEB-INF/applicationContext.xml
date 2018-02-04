@@ -18,7 +18,7 @@
  
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
         <property name="driverClassName" value="com.mysql.jdbc.Driver" />
-        <property name="url" value="jdbc:mysql://mysql:3306/sampledb" />
+        <property name="url" value="jdbc:mysql://localhost:3306/mojabaza" />
         <property name="username" value="tutorial" />
         <property name="password" value="password" />
     </bean>
@@ -33,7 +33,7 @@
                 <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
                 <prop key="hibernate.show_sql">true</prop>
                 <prop key="hibernate.enable_lazy_load_no_trans">true</prop>
-                <prop key="hibernate.default_schema">sampledb</prop>
+                <prop key="hibernate.default_schema">mojaBaza</prop>
                 <prop key="format_sql">true</prop>
                 <prop key="use_sql_comments">true</prop>
                 <!-- <prop key="hibernate.hbm2ddl.auto">create</prop> -->

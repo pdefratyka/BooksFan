@@ -54,7 +54,6 @@ app.controller('defaultCtrl',
 				window.location.href = pathArray[0] + "/home.html";
 			};
 			$scope.saveComment = function() {
-				alert("YOLO");
 				ajaxSaveComment($("#profileButton").attr('value'));
 			};
 			$scope.search = function() {
@@ -149,11 +148,8 @@ function loadRateValue() {
 	rate = scope.book.personalRate;
 }
 function ajaxRateBook(login) {
-	alert("Ajax Rate Book");
 	loadRateValue();
 	var pathArray = window.location.pathname.split('/');
-	alert(pathArray[1]);
-	alert(pathArray[2]);
 	$.ajax({
 		type : 'POST',
 		url : pathArray[2] + '/rate/' + rate,

@@ -15,32 +15,37 @@
 </head>
 <body onload="ajaxLoadBook(${userId})">
   <div id="mainCtrl"  data-ng-controller="defaultCtrl">
-    <div id="header">
-      <div id="logo" ng-click="pageLogoFunction()">
-        <img src="https://image.ibb.co/ivTmc6/logo.png">
-        <h2>BooksFan</h2>
-      </div>
-
-      <input type="text" placeholder="Title or Author..." class="Search" ng-model="searchValue" ng-keypress="searchFunction($event)">
-      <input type="button" ng-click="search()" id="searchButton">
+   <div id="head">
+      <nav class="profile">
+        <ul>
+          <li class="profileParent">
+             <!--There should be ${name} instead of Profile
+                 Ewentually you'll have to change function if-->
+            <img src="https://image.ibb.co/bMof4m/profile.png" value="${name}" id="profileButton" ng-click="profile('${userId}')">
+            <h3>${name}</h3>
+            <ul>
+              <li><input type="button" value="Profile" ng-click="profile('${userId}')"></li>
+              <li><input type="button" value="Logout" ng-click="logout()"></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+  	  <div id="pageHeader">
+        <div id="pageLogo" ng-click="pageLogoFunction()">
+          <img src="https://image.ibb.co/ivTmc6/logo.png" id="logoIcon">
+          <h2>BooksFan</h2>
+        </div>
+    		<input type="text" placeholder="Title or Author..." class="Search"
+    			ng-model="searchValue" ng-keypress="searchFunction($event)">
+    	  <input type="button" ng-click="search()">
+  	  </div>
       <div id="login">
-        <a ng-click="loginHref()">Log in</a><span>  /  </span><a ng-click="registerHref()">Register</a>
-      </div> 
-        <nav class="profile">
-          <ul>
-            <li class="profileParent">
-               <!--There should be ${name} instead of Profile
-                   Ewentually you'll have to change function if-->
-              <img src="https://image.ibb.co/bMof4m/profile.png" value="${name}" id="profileButton" ng-click="profile('${userId}')">
-              <h3>${name}</h3>
-              <ul>
-                <li><input type="button" value="Profile" ng-click="profile('${userId}')"></li>
-                <li><input type="button" value="Logout" ng-click="logout()"></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-    </div>
+        <a href="login">Log in</a><span>  /  </span><a href="register">Register</a>
+      </div>
+      <div id="mainBar" style="visibility:hidden;">
+       <h2 ng-click="ranking()">Ranking</h2><h2 ng-click="recentlyRead()">Recently Read</h2>
+      </div>
+     </div>
     <div id="description">
       <img src="{{book.img}}" style="float:left;" class="bookImage">
       <div style="float:left">

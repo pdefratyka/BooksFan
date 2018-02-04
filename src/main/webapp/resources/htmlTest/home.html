@@ -1,12 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html ng-app="app">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet"
-	href="<c:url value="/resources/styles/homeSe.css"/>">
+	href="C:\Users\pawel\Documents\GitHub\test2\src\main\webapp\resources\styles\homeSe.css"/>
 <title>BooksFan</title>
 </head>
 <body data-ng-controller="homeCtrl" id="home">
@@ -37,10 +34,12 @@
       <div id="login">
         <a href="login">Log in</a><span>  /  </span><a href="register">Register</a>
       </div>
-      <div id="mainBar" style="visibility:hidden;">
+      <div id="mainBar">
        <h2 ng-click="ranking()">Ranking</h2><h2 ng-click="recentlyRead()">Recently Read</h2>
       </div>
      </div>
+
+
      <div id="center">
        <div id="slidePanel">
          <i class="arrow right" ng-click="nextSlide()"></i>
@@ -70,9 +69,9 @@
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular.min.js"></script>
 		<script type="text/javascript"
-		src="<c:url value="/resources/scripts/ajaxScript2.js"/>"></script>
+		src="C:\Users\pawel\Documents\GitHub\test2\src\main\webapp\resources\scripts\ajaxScript2.js"></script>
 		<script type="text/javascript"
-		src="<c:url value="/resources/scripts/homeScript.js"/>"></script>
+		src="C:\Users\pawel\Documents\GitHub\test2\src\main\webapp\resources\scripts\homeS.js"></script>
 
 </body>
 </html>

@@ -48,7 +48,6 @@ public class BookController {
 		List<Book>list=bookService.getBooksByAuthor(query);
 		HttpHeaders httpHeaders=new HttpHeaders();
 		httpHeaders.add("Cache-Control","no-cache, no-store, must-revalidate");
-		System.out.println("Get book");
 		if(list.size()>0)
 			return new ResponseEntity<List<Book>>(list,httpHeaders, HttpStatus.OK);
 

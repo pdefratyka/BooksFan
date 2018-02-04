@@ -13,8 +13,18 @@
 </head>
 <body onload="ajaxLoadBooksW()">
   <div id="mainCtrl"  data-ng-controller="defaultCtrl">
-    <div id="head">
-      <nav class="profile">
+    <div id="header">
+      <div id="logo" ng-click="pageLogoFunction()">
+        <img src="https://image.ibb.co/ivTmc6/logo.png">
+        <h2>BooksFan</h2>
+      </div>
+
+      <input type="text" placeholder="Title or Author..." class="Search" ng-model="searchValue" ng-keypress="searchFunction($event)">
+      <input type="button" ng-click="search()" id="searchButton">
+      <div id="login">
+        <a href="login">Log in</a><span>  /  </span><a href="register">Register</a>
+      </div>
+       <nav class="profile">
         <ul>
           <li class="profileParent">
              <!--There should be ${name} instead of Profile
@@ -28,22 +38,7 @@
           </li>
         </ul>
       </nav>
-  	  <div id="pageHeader">
-        <div id="pageLogo" ng-click="pageLogoFunction()">
-          <img src="https://image.ibb.co/ivTmc6/logo.png" id="logoIcon">
-          <h2>BooksFan</h2>
-        </div>
-    		<input type="text" placeholder="Title or Author..." class="Search"
-    			ng-model="searchValue" ng-keypress="searchFunction($event)">
-    	  <input type="button" ng-click="search()">
-  	  </div>
-      <div id="login">
-        <a href="login">Log in</a><span>  /  </span><a href="register">Register</a>
-      </div>
-      <div id="mainBar" style="visibility:hidden;">
-       <h2 ng-click="ranking()">Ranking</h2><h2 ng-click="recentlyRead()">Recently Read</h2>
-      </div>
-     </div>
+    </div>
     <div id="booksList">
     <div id="emptyList">
     	<img src="https://image.ibb.co/dnqA4m/page_Loading3.gif">

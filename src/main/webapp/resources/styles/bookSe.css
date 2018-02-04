@@ -7,23 +7,10 @@ body{
 /*HEAD*/
 #header{
   width:1320px;
-  height:120px;
+  height:100px;
+  background-color: black;
   display: flex;
   margin-top:-6px;
-  background: rgba(0, 0, 0, 0.4);
-  -webkit-animation: fadeout 2s;
-}
-#header:hover{
-  -webkit-animation: fadein 2s;
-  background: rgba(0, 0, 0, 0.9);
-}
-@keyframes fadein {
-    from { background: rgba(0, 0, 0, 0.4);}
-    to   { background: rgba(0, 0, 0, 0.9); }
-}
-@keyframes fadeout {
-    from { background: rgba(0, 0, 0, 0.9);}
-    to   { background: rgba(0, 0, 0, 0.4); }
 }
 #searchButton{
   width:40px;

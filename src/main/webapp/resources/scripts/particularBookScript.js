@@ -90,14 +90,6 @@ app.controller('defaultCtrl',
 				}
 
 			};
-			$scope.loginHref=function(){
-				var pathArray = window.location.pathname.split('/');
-				window.location.href = pathArray[0] + "/login";
-			};
-			$scope.registerHref=function(){
-				var pathArray = window.location.pathname.split('/');
-				window.location.href = pathArray[0] + "/register";
-			};
 		});
 function loadBook(title, author, year, views, img, rate, manyOfRead) {
 	var scope = angular.element(document.getElementById("mainCtrl")).scope();

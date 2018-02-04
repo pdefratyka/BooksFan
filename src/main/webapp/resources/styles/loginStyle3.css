@@ -1,0 +1,26 @@
+body{
+  width:auto;
+  height:400px;
+  background-image: url("https://image.ibb.co/b48DQb/book.jpg");
+  background-size: cover;
+}
+#loginDiv{
+  width:300px;
+  height:250px;
+  margin-left: 500px;
+  margin-top: 200px;
+}
+#loginDiv input[type="text"], input[type="password"]{
+  width:280px;
+  height:50px;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+#loginDiv input[type="button"]{
+  height:60px;
+  width:100px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left: 100px;
+  font-size: 20px;
+}

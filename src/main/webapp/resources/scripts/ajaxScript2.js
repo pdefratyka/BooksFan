@@ -9,8 +9,8 @@ function ajaxAddBook(){
 		contentType: "application/json; charset=utf-8",
 		dataType:'json',
 		success : function(response) {
-			window.location.href="";
 			alert("Succsses");
+			window.location.href = "home";
 		},
 		error: function(){
 			alert("Fail");

@@ -40,13 +40,13 @@
       <input class="FilterInput" ng-model="search.title" placeholder="Title...">
       <input class="FilterInput" ng-model="search.author" placeholder="Author...">
       <input class="FilterInput" ng-model="search.year" placeholder="Year...">
-      <!-- <input class="FilterInput" ng-model="search.rate" placeholder="Rate..."> -->
+      <input class="FilterInput" ng-model="search.rate" placeholder="Rate...">
       <h3 ng-click="sortTitlesByAlphabet()">Sort titles by Alphabet</h3>
       <h3 ng-click="sortAuthorsByAlphabet()">Sort authors by Alphabet</h3>
-      <!--  <h3 ng-click="sortByYear()">Sort by Year</h3>
+      <h3 ng-click="sortByYear()">Sort by Year</h3>
       <h3>Sort by Date</h3>
       <h3>Sort by General rate</h3>
-      <h3 ng-click="sortByYourRate()">Sort by Your rate</h3>-->
+      <h3 ng-click="sortByYourRate()">Sort by Your rate</h3>
     </div>
     <div id="mainPage">
       <div class="bookFrame" data-ng-repeat="book in bookList | filter:myFilter" ng-click="selectBook(book.id)" ng-mouseenter="mouseOver($event,true);" ng-mouseleave="mouseOver($event,false)" >

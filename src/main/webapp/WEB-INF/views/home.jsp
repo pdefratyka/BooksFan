@@ -37,7 +37,7 @@
       <div id="login">
         <a href="login">Log in</a><span>  /  </span><a href="register">Register</a>
       </div>
-      <div id="mainBar" style="visibility:hidden;">
+      <div id="mainBar">
        <h2 ng-click="ranking()">Ranking</h2><h2 ng-click="recentlyRead()">Recently Read</h2>
       </div>
      </div>

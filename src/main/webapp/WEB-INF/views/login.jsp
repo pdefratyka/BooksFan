@@ -15,7 +15,7 @@
       <input id="login" type="text" placeholder="Login...">
       <input id="password" type="password" placeholder="Password..." ng-keypress="loginFunction($event)">
       <input type="button" value="Login" ng-click="login()">
-      <input type="button" value="Home page" ng-click="back()">
+      <input type="button" value="Home" ng-click="back()">
     </div>
   </div>
 

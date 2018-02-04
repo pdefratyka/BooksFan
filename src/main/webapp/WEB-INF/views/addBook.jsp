@@ -16,7 +16,8 @@
 			<input id="author" type="text" placeholder="Author...">
 			<input id="year" type="text" placeholder="Year..."> 
 			<input id="image" type="text" placeholder="Image...">
-			<input type="button" value="Submit" ng-click="addBook()">				
+			<input type="button" value="Submit" ng-click="addBook()">
+			<input type="button" value="Home page" ng-click="back()">					
 		</div>
 	</div>
 
@@ -28,7 +29,7 @@
 	<script type="text/javascript"
 		src="<c:url value="/resources/scripts/ajaxScript3.js"/>"></script>
 	<script type="text/javascript"
-		src="<c:url value="/resources/scripts/addBookS.js"/>"></script>
+		src="<c:url value="/resources/scripts/addBookS2.js"/>"></script>
 
 </body>
 </html>

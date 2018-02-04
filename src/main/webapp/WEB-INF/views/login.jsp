@@ -15,6 +15,7 @@
       <input id="login" type="text" placeholder="Login...">
       <input id="password" type="password" placeholder="Password..." ng-keypress="loginFunction($event)">
       <input type="button" value="Login" ng-click="login()">
+      <input type="button" value="Home page" ng-click="back()">
     </div>
   </div>
 
@@ -26,7 +27,7 @@
 	<script type="text/javascript"
 		src="<c:url value="/resources/scripts/ajaxScript3.js"/>"></script>
 	<script type="text/javascript"
-		src="<c:url value="/resources/scripts/loginS.js"/>"></script>
+		src="<c:url value="/resources/scripts/loginS2.js"/>"></script>
 
 </body>
 </html>

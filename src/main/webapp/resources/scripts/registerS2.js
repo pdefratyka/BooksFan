@@ -4,6 +4,10 @@ app.controller('defaultCtrl', function($scope){
   $scope.register=function(){
 	 ajaxAddUser();
   }
+  $scope.back=function(){
+		var pathArray = window.location.pathname.split('/');
+		window.location.href = pathArray[0] + "/home.html";
+  }
   $scope.registerFunction = function(keyEvent) {
   if (keyEvent.which === 13){
     $scope.register();

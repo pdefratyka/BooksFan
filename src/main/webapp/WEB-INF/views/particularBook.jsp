@@ -40,7 +40,7 @@
     	  <input type="button" ng-click="search()">
   	  </div>
       <div id="login">
-        <a href="login">Log in</a><span>  /  </span><a href="register">Register</a>
+        <a ng-click="login()">Log in</a><span>  /  </span><a ng-click="register()">Register</a>
       </div>
       <div id="mainBar" style="visibility:hidden;">
        <h2 ng-click="ranking()">Ranking</h2><h2 ng-click="recentlyRead()">Recently Read</h2>
@@ -83,7 +83,7 @@
 	<script type="text/javascript"
 		src="<c:url value="/resources/scripts/ajaxScript3.js"/>"></script>
 	<script type="text/javascript"
-		src="<c:url value="/resources/scripts/particularBookScript4.js"/>"></script>
+		src="<c:url value="/resources/scripts/particularBookScript5.js"/>"></script>
 
 </body>
 </html>

@@ -16,7 +16,8 @@
 			<input id="userPassword" type="password" placeholder="Password...">
 			<input type="password" placeholder="Confrim password..."> 
 			<input id="userEmail" type="text" placeholder="Email..." ng-keypress="registerFunction($event)">
-			<input type="button" value="Register" ng-click="register()">				
+			<input type="button" value="Register" ng-click="register()">		
+			<input type="button" value="Home page" ng-click="back()">			
 		</div>
 	</div>
 
@@ -28,7 +29,7 @@
 	<script type="text/javascript"
 		src="<c:url value="/resources/scripts/ajaxScript3.js"/>"></script>
 	<script type="text/javascript"
-		src="<c:url value="/resources/scripts/registerS.js"/>"></script>
+		src="<c:url value="/resources/scripts/registerS2.js"/>"></script>
 
 </body>
 </html>

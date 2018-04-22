@@ -22,7 +22,6 @@ import com.services.UserService;
 @Controller
 @RequestMapping("/books")
 public class BookController {
-	/*YOLO*/
 	@Autowired
 	private BookService bookService;
 	

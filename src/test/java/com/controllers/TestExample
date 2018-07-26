@@ -1,0 +1,39 @@
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration
+public class TestControllerTest{
+	private static final String DOMAIN="DOMENA";
+	@MockBean
+	private TestService testService;
+	@Autowired
+	private TestController testController;
+	private MockMvc mockMvc;
+	private static HttpHeaders headers;
+	
+	@BeforeClass
+	public static void setupBeforeClass() {
+        headers = new HttpHeaders();
+        headers.add(HttpHeaders.AUTHORIZATION, TOKEN);
+	}
+	@Before
+	public void setup() {
+		mockMvc = MockMvcBuilders.standaloneSetup(testController).build();
+	}
+	@Test
+	public void shouldGetElements() throws Exception {
+		//Given
+		when(testService.function(Mockito.any(), Mockito.eq())).thenReturn(something);
+		//When
+		MvcResult result=this.mockMvc.perform(get(DOMAIN).headers(headers).param("name", value)).andDo(print()).
+		//Then
+				andExpect(status().isOk()).andReturn();
+		assertEquals(something.toString(),result.getResponse().getContentAsString());
+	}
+    @Configuration
+    static class Config {
+        @Bean
+        public TestController testController() {
+            return new TestController();
+        }
+    }
+
+}
